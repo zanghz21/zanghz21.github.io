@@ -12,7 +12,7 @@ I am Hongzhi Zang, a senior student from Yao Class, Tsinghua University. Nice to
 ## Publications
 ### Online Guidance Graph Optimization for Lifelong Multi-Agent Path Finding
 
-**Hongzhi Zang***, Yulun Zhang*, He Jiang, Zhe Chen, Daniel Harabor, Peter J. Stuckey, Jiaoyang Li
+**Hongzhi Zang**\*, Yulun Zhang\*, He Jiang, Zhe Chen, Daniel Harabor, Peter J. Stuckey, Jiaoyang Li
 
 [[arxiv](https://arxiv.org/abs/2411.16506)]
 
@@ -20,7 +20,7 @@ We study the problem of optimizing a guidance policy capable of dynamically guid
 
 ### Multi-UAV Behavior-based Formation with Static and Dynamic Obstacles Avoidance via Reinforcement Learning 
 
-Yuqing Xie*, Chao Yu*, **Hongzhi Zang***, Feng Gao, Wenhao Tang, Jingyi Huang, Jiayu Chen, Botian Xu, Yi Wu, Yu Wang
+Yuqing Xie\*, Chao Yu\*, **Hongzhi Zang**\*, Feng Gao, Wenhao Tang, Jingyi Huang, Jiayu Chen, Botian Xu, Yi Wu, Yu Wang
 
 [[project website](https://sites.google.com/view/uav-formation-with-avoidance)]
 
