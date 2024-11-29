@@ -9,9 +9,8 @@ redirect_from:
 
 I am Hongzhi Zang, a senior student from Yao Class, Tsinghua University. Nice to meet you!
 
-# Publications
-
-## Online Guidance Graph Optimization for Lifelong Multi-Agent Path Finding
+## Publications
+### Online Guidance Graph Optimization for Lifelong Multi-Agent Path Finding
 
 **Hongzhi Zang***, Yulun Zhang*, He Jiang, Zhe Chen, Daniel Harabor, Peter J. Stuckey, Jiaoyang Li
 
@@ -19,7 +18,7 @@ I am Hongzhi Zang, a senior student from Yao Class, Tsinghua University. Nice to
 
 We study the problem of optimizing a guidance policy capable of dynamically guiding the agents for lifelong Multi-Agent Path Finding based on real-time traffic patterns. Multi-Agent Path Finding (MAPF) focuses on moving multiple agents from their starts to goals without collisions. Its lifelong variant, LMAPF, continuously assigns new goals to agents. In this work, we focus on improving the solution quality of PIBT, a state-of-the-art rule-based LMAPF algorithm, by optimizing a policy to generate adaptive guidance. We design two pipelines to incorporate guidance in PIBT in two different ways. We demonstrate the superiority of the optimized policy over both static guidance and human-designed policies. Additionally, we explore scenarios where task distribution changes over time, a challenging yet common situation in real-world applications that is rarely explored in the literature.
 
-## Multi-UAV Behavior-based Formation with Static and Dynamic Obstacles Avoidance via Reinforcement Learning 
+### Multi-UAV Behavior-based Formation with Static and Dynamic Obstacles Avoidance via Reinforcement Learning 
 
 Yuqing Xie*, Chao Yu*, **Hongzhi Zang***, Feng Gao, Wenhao Tang, Jingyi Huang, Jiayu Chen, Botian Xu, Yi Wu, Yu Wang
 
