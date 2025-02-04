@@ -14,7 +14,8 @@ I am Hongzhi Zang, a senior student from Yao Class, Tsinghua University. Nice to
 
 **Hongzhi Zang**\*, Yulun Zhang\*, He Jiang, Zhe Chen, Daniel Harabor, Peter J. Stuckey, Jiaoyang Li
 
-<font color="green">Accepted by AAAI2025!</font> (acceptance rate: 23.4%) [[arxiv](https://arxiv.org/abs/2411.16506)]
+<font color="green">Accepted by AAAI2025!</font> (acceptance rate: 23.4%)   
+[[arXiv](https://arxiv.org/abs/2411.16506)] [[video](https://drive.google.com/file/d/1d35gmt18vlJ3XKdJwzmxlKv9JeASLLsc/view?usp=drive_link)] [[slide](https://drive.google.com/file/d/1BwxvofBldkSyrHTNZBDLsGdL3jr-kI5Y/view?usp=drive_link)] [[poster-with-text](https://drive.google.com/file/d/18BabjrKoh1BHGBhhFXegsOnXfVzg5yxW/view?usp=drive_link)]
 
 We study the problem of optimizing a guidance policy capable of dynamically guiding the agents for lifelong Multi-Agent Path Finding based on real-time traffic patterns. Multi-Agent Path Finding (MAPF) focuses on moving multiple agents from their starts to goals without collisions. Its lifelong variant, LMAPF, continuously assigns new goals to agents. In this work, we focus on improving the solution quality of PIBT, a state-of-the-art rule-based LMAPF algorithm, by optimizing a policy to generate adaptive guidance. We design two pipelines to incorporate guidance in PIBT in two different ways. We demonstrate the superiority of the optimized policy over both static guidance and human-designed policies. Additionally, we explore scenarios where task distribution changes over time, a challenging yet common situation in real-world applications that is rarely explored in the literature.
 
