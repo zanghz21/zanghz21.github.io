@@ -15,7 +15,7 @@ I am Hongzhi Zang, a senior student from Yao Class, Tsinghua University. Nice to
 **Hongzhi Zang**\*, Yulun Zhang\*, He Jiang, Zhe Chen, Daniel Harabor, Peter J. Stuckey, Jiaoyang Li
 
 <font color="green">Accepted by AAAI2025!</font> (acceptance rate: 23.4%)   
-[[arXiv](https://arxiv.org/abs/2411.16506)] [[video](https://drive.google.com/file/d/1d35gmt18vlJ3XKdJwzmxlKv9JeASLLsc/view?usp=drive_link)] [[slide](https://drive.google.com/file/d/1BwxvofBldkSyrHTNZBDLsGdL3jr-kI5Y/view?usp=drive_link)] [[poster-with-text](https://drive.google.com/file/d/18BabjrKoh1BHGBhhFXegsOnXfVzg5yxW/view?usp=drive_link)]
+[[arXiv](https://arxiv.org/abs/2411.16506)] [[video](https://drive.google.com/file/d/1d35gmt18vlJ3XKdJwzmxlKv9JeASLLsc/view?usp=drive_link)] [[slide](https://drive.google.com/file/d/1BwxvofBldkSyrHTNZBDLsGdL3jr-kI5Y/view?usp=drive_link)] [[poster-with-text](https://drive.google.com/file/d/18BabjrKoh1BHGBhhFXegsOnXfVzg5yxW/view?usp=drive_link)] [[code](https://github.com/zanghz21/OnlineGGO)]
 
 We study the problem of optimizing a guidance policy capable of dynamically guiding the agents for lifelong Multi-Agent Path Finding based on real-time traffic patterns. Multi-Agent Path Finding (MAPF) focuses on moving multiple agents from their starts to goals without collisions. Its lifelong variant, LMAPF, continuously assigns new goals to agents. In this work, we focus on improving the solution quality of PIBT, a state-of-the-art rule-based LMAPF algorithm, by optimizing a policy to generate adaptive guidance. We design two pipelines to incorporate guidance in PIBT in two different ways. We demonstrate the superiority of the optimized policy over both static guidance and human-designed policies. Additionally, we explore scenarios where task distribution changes over time, a challenging yet common situation in real-world applications that is rarely explored in the literature.
 
@@ -23,6 +23,18 @@ We study the problem of optimizing a guidance policy capable of dynamically guid
 
 Yuqing Xie\*, Chao Yu\*, **Hongzhi Zang**\*, Feng Gao, Wenhao Tang, Jingyi Huang, Jiayu Chen, Botian Xu, Yi Wu, Yu Wang
 
-under review [[project website](https://sites.google.com/view/uav-formation-with-avoidance)][[arXiv](https://arxiv.org/abs/2410.18495)]
+<font color="green">Accepted by IROS2025!</font>    
+[[project website](https://sites.google.com/view/uav-formation-with-avoidance)] [[arXiv](https://arxiv.org/abs/2410.18495)]
 
 Formation control of multiple Unmanned Aerial Vehicles (UAVs) is vital for practical applications.  This paper tackles the task of behavior-based UAV formation while avoiding static and dynamic obstacles during directed flight. We present a two-stage reinforcement learning (RL) training pipeline to tackle the challenge of multi-objective optimization, large exploration spaces, and the sim-to-real gap. The first stage searches in a simplified scenario for a linear utility function that balances all task objectives simultaneously, whereas the second stage applies the utility function in complex scenarios, utilizing curriculum learning to navigate large exploration spaces. Additionally, we apply an attention-based observation encoder to enhance formation maintenance and manage varying obstacle quantity. Experiments in simulation and real world demonstrate that our method outperforms planning-based and RL-based baselines regarding collision-free rate and formation maintenance in scenarios with static, dynamic, and mixed obstacles.
+
+## Projects
+### RLinf: Reinforcement Learning Infrastructure for Embodied and Agentic AI
+[[code](https://github.com/RLinf/RLinf)]
+
+RLinf is a flexible and scalable open-source RL infrastructure designed for Embodied and Agentic AI. The 'inf' in RLinf stands for Infrastructure, highlighting its role as a robust backbone for next-generation training. It also stands for Infinite, symbolizing the system’s support for open-ended learning, continuous generalization, and limitless possibilities in intelligence development.
+
+I am a core contributor to this project, primarily focusing on the Embodied AI components. Feel free to try it out and star the repository if you find it useful!⭐
+<div>
+  <img src="https://github.com/RLinf/misc/raw/main/pic/logo_white.svg" alt="RLinf-logo" width="600"/>
+</div>
