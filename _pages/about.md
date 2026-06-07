@@ -25,8 +25,23 @@ Online policy learning directly in the physical world is a promising yet challen
 
 **Hongzhi Zang**\*, Mingjie Wei\*, Si Xu, Yongji Wu, Zhen Guo, Yuanqing Wang, Hao Lin, Peihong Wang, Hua Yuan, Yixian Zhang, Liangzhi Shi, Yuqing Xie, Zhexuan Xu, Zhihao Liu, Kang Chen, Wenhao Tang, Quanlu Zhang, Weinan Zhang, Chao Yu, Yu Wang
 
-<font color="green">Accepted by RSS-2026!</font> (acceptance rate: 29.7%)    
-Accepted by CVPR-2026 ScaleBot Workshop! (🏆 Best Paper Award )
+<html>
+<table style="margin-left: auto; margin-right: auto;">
+<tr>
+<td> 
+<font color="green">Accepted by RSS-2026!</font> (acceptance rate: 29.7%)  
+</td>
+<td>
+Accepted by CVPR-2026 ScaleBot Workshop!    
+(🏆 Best Paper Award )
+</td>
+</tr>
+</table>
+</html>
+  
+
+
+
 [[arXiv](https://arxiv.org/abs/2510.06710)][[code](https://github.com/RLinf/RLinf)]
 
 Recent studies have demonstrated the potential of reinforcement learning (RL) to improve the task performance of vision-language-action (VLA) models through interaction. However, current efforts remain fragmented, lacking a unified platform for fair comparison across architectures and algorithms, as well as an efficient system design for scalable training. Therefore, we present RLinf-VLA, a unified and efficient framework for scalable RL training of VLA models. RLinf-VLA standardizes the integration of diverse VLA architectures, RL algorithms, and heterogeneous simulators through a unified interface, enabling extensibility and reproducibility. To improve efficiency, the framework adopts a flexible resource allocation architecture for rendering, inference, and training in RL pipelines. In particular, RLinf-VLA introduces a hybrid fine-grained pipeline allocation strategy that achieves a 1.61x–1.88x training speedup on ManiSkill. Using this framework, RL-trained models achieve strong performance across embodied benchmarks, including 98.11\% success on 130 LIBERO tasks, 97.66\% success on 25 ManiSkill tasks, and 84.63\% average success across 6 RoboTwin tasks. In addition, RLinf-VLA distills a set of effective practices for RL-based VLA training. We envision RLinf-VLA as a foundational framework for efficient, unified, and reproducible research in embodied intelligence.
