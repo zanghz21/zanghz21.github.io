@@ -2,9 +2,18 @@
 <div class="paper-list">
   {% for paper in site.data.papers %}
   <article class="paper" aria-labelledby="{{ paper.id }}-title">
-    <div class="paper__venue">
-      <span class="venue-name">{{ paper.venue }}</span>
-      <span class="venue-year">{{ paper.year }}</span>
+    <div class="paper__visual">
+      <div class="paper__venue">
+        <span class="venue-name">{{ paper.venue }}</span>
+        <span class="venue-year">{{ paper.year }}</span>
+      </div>
+      {% if paper.figure %}
+      <a class="paper__figure" href="{{ paper.figure | relative_url }}" target="_blank" rel="noopener" aria-label="View Figure 1 of {{ paper.title | escape }} at full size (opens in a new tab)">
+        <span class="paper__figure-frame">
+          <img src="{{ paper.figure | relative_url }}" alt="{{ paper.figure_alt | escape }}" width="{{ paper.figure_width }}" height="{{ paper.figure_height }}" loading="lazy" decoding="async">
+        </span>
+      </a>
+      {% endif %}
     </div>
     <div class="paper__body">
       <{{ paper_heading }} id="{{ paper.id }}-title">{{ paper.title }}</{{ paper_heading }}>

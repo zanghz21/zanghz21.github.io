@@ -1,4 +1,8 @@
   - id: collective-experience-learning
+    figure: /images/publications/collective-experience-learning-fig1.png
+    figure_alt: 'Figure 1: Collective Experience Learning across a robot fleet, with FERT, FATS, and five real-world manipulation tasks.'
+    figure_width: 2028
+    figure_height: 1092
     title: 'Learning from Fleet Experience: Collective Experience Learning Across 96 Robots'
     authors: >-
       Chao Yu\*, Shu'ang Yu\*, Hao Lin\*, **Hongzhi Zang**\*, Yuxiang Yan\*, Chenxi Jiang\*, Zhen Guo, Chuankang Li,
@@ -31,6 +35,10 @@
       - label: Project
         url: https://cel-robot-learning.github.io/
   - id: rlinf-user
+    figure: /images/publications/rlinf-user-fig1.png
+    figure_alt: 'Figure 1: USER architecture connecting training, rollout, and robot workers through a unified hardware abstraction layer and adaptive communication plane.'
+    figure_width: 2291
+    figure_height: 1419
     title: 'RLinf-USER: A Unified and Extensible System for Online Real-World Policy Learning in Embodied AI'
     authors: >-
       **Hongzhi Zang**\*, Shu'ang Yu\*, Hao Lin\*, Tianxing Zhou, Zefang Huang, Zhen Guo, Xin Xu, Yuze Sheng, Jiakai Zhou,
@@ -55,6 +63,10 @@
       - label: Code
         url: https://github.com/RLinf/RLinf
   - id: rlinf-vla
+    figure: /images/publications/rlinf-vla-fig1.png
+    figure_alt: 'Figure 1: RLinf-VLA overview with supported simulators, reinforcement learning algorithms, VLA models, GPU allocation modes, and evaluation results.'
+    figure_width: 1569
+    figure_height: 858
     title: 'RLinf-VLA: A Unified and Efficient Framework for Reinforcement Learning of Vision-Language-Action Models'
     authors: >-
       **Hongzhi Zang**\*, Mingjie Wei\*, Si Xu, Yongji Wu, Zhen Guo, Yuanqing Wang, Hao Lin, Peihong Wang, Hua Yuan, Yixian
@@ -84,6 +96,10 @@
       - label: Code
         url: https://github.com/RLinf/RLinf
   - id: online-ggo
+    figure: /images/publications/online-ggo-fig1.png
+    figure_alt: 'Figure 1: Congestion heatmaps with a shared color scale comparing no guidance, offline guidance, and online guidance.'
+    figure_width: 1470
+    figure_height: 450
     title: Online Guidance Graph Optimization for Lifelong Multi-Agent Path Finding
     authors: >-
       **Hongzhi Zang**\*, Yulun Zhang\*, He Jiang, Zhe Chen, Daniel Harabor, Peter J. Stuckey, Jiaoyang Li
@@ -112,6 +128,10 @@
       - label: Code
         url: https://github.com/zanghz21/OnlineGGO
   - id: uav-formation
+    figure: /images/publications/uav-formation-fig1.png
+    figure_alt: 'Figure 1: Two-stage multi-UAV training pipeline with reward-function search, curriculum learning for static and dynamic obstacle avoidance, and real-world deployment.'
+    figure_width: 4269
+    figure_height: 974
     title: Multi-UAV Behavior-based Formation with Static and Dynamic Obstacles Avoidance via Reinforcement Learning
     authors: >-
       Yuqing Xie\*, Chao Yu\*, **Hongzhi Zang**\*, Feng Gao, Wenhao Tang, Jingyi Huang, Jiayu Chen, Botian Xu, Yi Wu, Yu Wang

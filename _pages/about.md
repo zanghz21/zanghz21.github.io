@@ -19,7 +19,7 @@ redirect_from:
     <div class="contact-links" aria-label="Contact and profiles">
       <a href="mailto:{{ site.author.email }}">Email</a>
       <a href="https://github.com/zanghz21">GitHub</a>
-      <a href="{{ '/files/cv-en-260305.pdf' | relative_url }}">Curriculum Vitae</a>
+      <a href="{{ '/files/CV-en-261121.pdf' | relative_url }}">Curriculum Vitae</a>
     </div>
   </div>
   <figure class="intro__portrait">
@@ -54,7 +54,11 @@ redirect_from:
   <article class="project-feature" aria-labelledby="rlinf-title">
     <div class="project-feature__name">
       <p class="eyebrow">Core contributor</p>
-      <h3 id="rlinf-title">RLinf<span>Reinforcement Learning Infrastructure</span></h3>
+      <div class="project-brand">
+        <img src="{{ '/images/rlinf-logo.svg' | relative_url }}" alt="" width="640" height="250" loading="lazy" decoding="async">
+        <h3 id="rlinf-title">RLinf</h3>
+      </div>
+      <p class="project-feature__tagline">Reinforcement Learning Infrastructure</p>
     </div>
     <div class="project-feature__description">
       <p>A flexible and scalable open-source framework for embodied and agentic AI. I primarily contribute to embodied AI algorithms and training in simulation and the real world.</p>
