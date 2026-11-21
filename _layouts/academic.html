@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include seo.html %}
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+  </head>
+  <body class="academic-site">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-name" href="{{ '/' | relative_url }}">Hongzhi Zang<span lang="zh-Hans">臧宏之</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+          {% for link in site.data.navigation.main %}
+          <a href="{{ link.url | relative_url }}"{% if link.title == 'CV' %} class="nav-cv"{% endif %}>{{ link.title }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="site-main" tabindex="-1">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <p>&copy; {{ site.time | date: '%Y' }} Hongzhi Zang <span lang="zh-Hans">臧宏之</span></p>
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    </footer>
+  </body>
+</html>

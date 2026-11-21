@@ -1,77 +1,64 @@
 ---
+layout: academic
 permalink: /
-title: "About Me: Hongzhi Zang"
-author_profile: true
-redirect_from: 
+title: "Embodied Intelligence"
+excerpt: "Hongzhi Zang is a first-year Ph.D. student at the College of AI, Tsinghua University, advised by Prof. Yu Wang and working closely with Prof. Chao Yu. Research interests include embodied intelligence."
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am Hongzhi Zang, a senior student from Yao Class, Tsinghua University. Nice to meet you!
+<section class="intro" id="about" aria-labelledby="intro-title">
+  <div class="intro__text">
+    <p class="eyebrow">Tsinghua University · College of AI</p>
+    <h1 id="intro-title">Hongzhi Zang <span lang="zh-Hans">臧宏之</span></h1>
+    <p class="intro__role">Ph.D. student in Embodied Intelligence</p>
+    <p>I am a first-year Ph.D. student at the <a href="https://collegeai.tsinghua.edu.cn/">College of AI, Tsinghua University</a>, advised by <a href="https://nicsefc.ee.tsinghua.edu.cn/people/YuWang">Prof. Yu Wang</a> and working closely with <a href="https://zoeyuchao.github.io/">Prof. Chao Yu</a>.</p>
+    <p>Previously, I studied in the <a href="https://iiis.tsinghua.edu.cn/en/Yao_Class/About_Yao_Class.htm">Yao Class</a> at Tsinghua University. My research interests lie in <strong>embodied intelligence</strong>.</p>
+    <div class="contact-links" aria-label="Contact and profiles">
+      <a href="mailto:{{ site.author.email }}">Email</a>
+      <a href="https://github.com/zanghz21">GitHub</a>
+      <a href="{{ '/files/cv-en-260305.pdf' | relative_url }}">Curriculum Vitae</a>
+    </div>
+  </div>
+  <figure class="intro__portrait">
+    <img src="{{ '/images/profile.jpg' | relative_url }}" alt="Hongzhi Zang" width="800" height="1200" fetchpriority="high">
+    <figcaption>Beijing, China</figcaption>
+  </figure>
+</section>
 
-## Publications
+<section class="research-section" id="research" aria-labelledby="research-title">
+  <div class="section-heading">
+    <h2 id="research-title">Research</h2>
+  </div>
+  <p>I work on algorithms and systems that help robots learn through interaction, from reinforcement learning for embodied foundation models to online learning in the real world. I am a core contributor to <a href="https://github.com/RLinf/RLinf">RLinf</a>, with a focus on embodied AI.</p>
+  <ul class="research-topics" aria-label="Research topics">
+    <li>Robot Learning</li>
+    <li>Reinforcement Learning</li>
+  </ul>
+</section>
 
-### RLinf-USER: A Unified and Extensible System for Online Real-World Policy Learning in Embodied AI
+<section class="publications-section" id="publications" aria-labelledby="publications-title">
+  <div class="section-heading">
+    <h2 id="publications-title">Publications</h2>
+    <p>* Equal contribution</p>
+  </div>
+  {% include paper-list.html %}
+</section>
 
-**Hongzhi Zang**\*, Shu'ang Yu\*, Hao Lin\*, Tianxing Zhou, Zefang Huang, Zhen Guo, Xin Xu, Yuze Sheng, Jiakai Zhou, Shizhe Zhang, Feng Gao, Wenhao Tang, Yufeng Yue, Quanlu Zhang, Xinlei Chen, Chao Yu, Yu Wang
-
-<font color="green">Accepted by RSS-2026!</font> (acceptance rate: 29.7%)    
-[[arXiv](https://arxiv.org/abs/2602.07837)][[code](https://github.com/RLinf/RLinf)]
-
-Online policy learning directly in the physical world is a promising yet challenging direction for embodied intelligence. Unlike simulation, real-world systems cannot be arbitrarily accelerated, cheaply reset, or massively replicated, suggesting that real-world policy learning is not merely an algorithmic problem, but inherently a systems problem. We present USER, a **U**nified and extensible **S**yst**E**m for real-world online policy lea**R**ning. On the systems side, USER introduces a hardware abstraction layer for unified robot management and an adaptive communication plane that enables efficient cloud-edge training. On the learning side, USER adopts a fully asynchronous training framework, designs a persistent and cache-aware replay buffer, and provides extensible abstractions for rewards, algorithms, and policies. Experiments in both simulation and the real world demonstrate that USER supports multi-robot coordination, heterogeneous manipulators, cloud-edge training with large models, and long-running asynchronous training. Together, these capabilities establish USER as a unified and extensible systems foundation for real-world online policy learning.
-
-
-### RLinf-VLA: A Unified and Efficient Framework for Reinforcement Learning of Vision-Language-Action Models
-
-**Hongzhi Zang**\*, Mingjie Wei\*, Si Xu, Yongji Wu, Zhen Guo, Yuanqing Wang, Hao Lin, Peihong Wang, Hua Yuan, Yixian Zhang, Liangzhi Shi, Yuqing Xie, Zhexuan Xu, Zhihao Liu, Kang Chen, Wenhao Tang, Quanlu Zhang, Weinan Zhang, Chao Yu, Yu Wang
-
-<html>
-<table style="margin-left: auto; margin-right: auto;">
-<tr>
-<td> 
-<font color="green">Accepted by RSS-2026!</font> (acceptance rate: 29.7%)  
-</td>
-<td>
-Accepted by CVPR-2026 ScaleBot Workshop!    
-(🏆 Best Paper Award )
-</td>
-</tr>
-</table>
-</html>
-  
-
-
-
-[[arXiv](https://arxiv.org/abs/2510.06710)][[code](https://github.com/RLinf/RLinf)]
-
-Recent studies have demonstrated the potential of reinforcement learning (RL) to improve the task performance of vision-language-action (VLA) models through interaction. However, current efforts remain fragmented, lacking a unified platform for fair comparison across architectures and algorithms, as well as an efficient system design for scalable training. Therefore, we present RLinf-VLA, a unified and efficient framework for scalable RL training of VLA models. RLinf-VLA standardizes the integration of diverse VLA architectures, RL algorithms, and heterogeneous simulators through a unified interface, enabling extensibility and reproducibility. To improve efficiency, the framework adopts a flexible resource allocation architecture for rendering, inference, and training in RL pipelines. In particular, RLinf-VLA introduces a hybrid fine-grained pipeline allocation strategy that achieves a 1.61x–1.88x training speedup on ManiSkill. Using this framework, RL-trained models achieve strong performance across embodied benchmarks, including 98.11\% success on 130 LIBERO tasks, 97.66\% success on 25 ManiSkill tasks, and 84.63\% average success across 6 RoboTwin tasks. In addition, RLinf-VLA distills a set of effective practices for RL-based VLA training. We envision RLinf-VLA as a foundational framework for efficient, unified, and reproducible research in embodied intelligence.
-
-
-### Online Guidance Graph Optimization for Lifelong Multi-Agent Path Finding
-
-**Hongzhi Zang**\*, Yulun Zhang\*, He Jiang, Zhe Chen, Daniel Harabor, Peter J. Stuckey, Jiaoyang Li
-
-<font color="green">Accepted by AAAI-2025!</font> (acceptance rate: 23.4%)   
-[[arXiv](https://arxiv.org/abs/2411.16506)] [[video](https://drive.google.com/file/d/1d35gmt18vlJ3XKdJwzmxlKv9JeASLLsc/view?usp=drive_link)] [[slide](https://drive.google.com/file/d/1BwxvofBldkSyrHTNZBDLsGdL3jr-kI5Y/view?usp=drive_link)] [[poster-with-text](https://drive.google.com/file/d/18BabjrKoh1BHGBhhFXegsOnXfVzg5yxW/view?usp=drive_link)] [[code](https://github.com/zanghz21/OnlineGGO)]
-
-We study the problem of optimizing a guidance policy capable of dynamically guiding the agents for lifelong Multi-Agent Path Finding based on real-time traffic patterns. Multi-Agent Path Finding (MAPF) focuses on moving multiple agents from their starts to goals without collisions. Its lifelong variant, LMAPF, continuously assigns new goals to agents. In this work, we focus on improving the solution quality of PIBT, a state-of-the-art rule-based LMAPF algorithm, by optimizing a policy to generate adaptive guidance. We design two pipelines to incorporate guidance in PIBT in two different ways. We demonstrate the superiority of the optimized policy over both static guidance and human-designed policies. Additionally, we explore scenarios where task distribution changes over time, a challenging yet common situation in real-world applications that is rarely explored in the literature.
-
-### Multi-UAV Behavior-based Formation with Static and Dynamic Obstacles Avoidance via Reinforcement Learning 
-
-Yuqing Xie\*, Chao Yu\*, **Hongzhi Zang**\*, Feng Gao, Wenhao Tang, Jingyi Huang, Jiayu Chen, Botian Xu, Yi Wu, Yu Wang
-
-<font color="green">Accepted by IROS-2025!</font>    
-[[project website](https://sites.google.com/view/uav-formation-with-avoidance)] [[arXiv](https://arxiv.org/abs/2410.18495)]
-
-Formation control of multiple Unmanned Aerial Vehicles (UAVs) is vital for practical applications.  This paper tackles the task of behavior-based UAV formation while avoiding static and dynamic obstacles during directed flight. We present a two-stage reinforcement learning (RL) training pipeline to tackle the challenge of multi-objective optimization, large exploration spaces, and the sim-to-real gap. The first stage searches in a simplified scenario for a linear utility function that balances all task objectives simultaneously, whereas the second stage applies the utility function in complex scenarios, utilizing curriculum learning to navigate large exploration spaces. Additionally, we apply an attention-based observation encoder to enhance formation maintenance and manage varying obstacle quantity. Experiments in simulation and real world demonstrate that our method outperforms planning-based and RL-based baselines regarding collision-free rate and formation maintenance in scenarios with static, dynamic, and mixed obstacles.
-
-## Projects
-### RLinf: Reinforcement Learning Infrastructure for Embodied and Agentic AI
-[[code](https://github.com/RLinf/RLinf)]
-
-RLinf is a flexible and scalable open-source RL infrastructure designed for Embodied and Agentic AI. The 'inf' in RLinf stands for Infrastructure, highlighting its role as a robust backbone for next-generation training. It also stands for Infinite, symbolizing the system’s support for open-ended learning, continuous generalization, and limitless possibilities in intelligence development.
-
-I am a core contributor to this project, primarily focusing on the Embodied AI components. Feel free to try it out and star the repository if you find it useful!⭐
-<div>
-  <img src="https://github.com/RLinf/misc/raw/main/pic/logo_white.svg" alt="RLinf-logo" width="600"/>
-</div>
+<section class="projects-section" id="projects" aria-labelledby="projects-title">
+  <div class="section-heading">
+    <h2 id="projects-title">Open Source</h2>
+  </div>
+  <article class="project-feature" aria-labelledby="rlinf-title">
+    <div class="project-feature__name">
+      <p class="eyebrow">Core contributor</p>
+      <h3 id="rlinf-title">RLinf<span>Reinforcement Learning Infrastructure</span></h3>
+    </div>
+    <div class="project-feature__description">
+      <p>A flexible and scalable open-source framework for embodied and agentic AI. I primarily contribute to embodied AI algorithms and training in simulation and the real world.</p>
+      <a class="project-link" href="https://github.com/RLinf/RLinf">View on GitHub</a>
+    </div>
+  </article>
+</section>

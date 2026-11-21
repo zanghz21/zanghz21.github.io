@@ -1,0 +1,136 @@
+  - id: collective-experience-learning
+    title: 'Learning from Fleet Experience: Collective Experience Learning Across 96 Robots'
+    authors: >-
+      Chao Yu\*, Shu'ang Yu\*, Hao Lin\*, **Hongzhi Zang**\*, Yuxiang Yan\*, Chenxi Jiang\*, Zhen Guo, Chuankang Li,
+      Yihao Chen, Xin Xu, Xu Fu, Jiakai Zhou, Liangzhi Shi, Hongyi Ren, Yiwei Liu, Jing Wu, Yuanqing Wang, Chen Wu,
+      Bo Dai, Chunyu Yang, Hongliang Huang, Shuoyu Yue, Weiqi Yin, Yinuo Chen, Ruihua Chen, Chunyang Zhu, Han Xiao,
+      Yanghao Li, Ruipu Wu, Zhikai Cai, Xiu Chen, Xu Tan, Si Liu, Yuchen Yan, Jialin Zhang, Wen Zeng, Yiming Zhou,
+      Zixiao Huang, Xinlei Chen, Guanghui Ren, Quanlu Zhang, Boxun Li, Maoqing Yao, Yu Wang
+    year: 2026
+    venue: arXiv preprint
+    summary: Collective experience learning across up to 96 robots, using failure-guided retrieval and fault-tolerant
+      asynchronous training to improve real-world manipulation policies.
+    abstract: >-
+      Robot deployment generates experience that can support policy improvement, but continued reliance on expert corrective
+      actions makes learning difficult to scale across growing fleets. We propose learning from fleet experience: using
+      deployed robots' own executions as a source of supervision for further policy improvement. We call this paradigm
+      Collective Experience Learning (CEL), in which robots pool execution experience to update a shared policy that returns
+      to the fleet. Following expert-supervised initialization, we realize CEL through failure-guided experience retrieval
+      fine-tuning (FERT). FERT uses failure contexts to retrieve relevant segments from successful trajectories and prioritizes
+      their recorded actions for supervised updates, without collecting additional expert demonstrations or corrective actions.
+      Operators provide binary episode-outcome labels and environment resets. A fault-tolerant asynchronous training system
+      (FATS) coordinates robot execution, cloud inference and policy optimization despite local interruptions. Across five
+      real-world manipulation tasks, the resulting policies achieve success rates of 93.3-99.2%, evaluated over 120 trials
+      per task on robots excluded from training data collection. With collection time per robot held fixed, larger fleets
+      provide more experience and generally improve performance across the evaluated sizes. On multi-stage phone packaging,
+      learning with 96 robots raises success from 79.2% to 98.3%. These results support CEL as a scalable approach to improving
+      robot policy reliability through experience generated during deployment.
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2610.25736
+      - label: Project
+        url: https://cel-robot-learning.github.io/
+  - id: rlinf-user
+    title: 'RLinf-USER: A Unified and Extensible System for Online Real-World Policy Learning in Embodied AI'
+    authors: >-
+      **Hongzhi Zang**\*, Shu'ang Yu\*, Hao Lin\*, Tianxing Zhou, Zefang Huang, Zhen Guo, Xin Xu, Yuze Sheng, Jiakai Zhou,
+      Shizhe Zhang, Feng Gao, Wenhao Tang, Yufeng Yue, Quanlu Zhang, Xinlei Chen, Chao Yu, Yu Wang
+    year: 2026
+    venue: RSS
+    summary: A unified system for asynchronous real-world policy learning across multiple robots and cloud-edge infrastructure.
+    abstract: >-
+      Online policy learning directly in the physical world is a promising yet challenging direction for embodied intelligence.
+      Unlike simulation, real-world systems cannot be arbitrarily accelerated, cheaply reset, or massively replicated, suggesting
+      that real-world policy learning is not merely an algorithmic problem, but inherently a systems problem. We present USER,
+      a **U**nified and extensible **S**yst**E**m for real-world online policy lea**R**ning. On the systems side, USER introduces
+      a hardware abstraction layer for unified robot management and an adaptive communication plane that enables efficient
+      cloud-edge training. On the learning side, USER adopts a fully asynchronous training framework, designs a persistent
+      and cache-aware replay buffer, and provides extensible abstractions for rewards, algorithms, and policies. Experiments
+      in both simulation and the real world demonstrate that USER supports multi-robot coordination, heterogeneous manipulators,
+      cloud-edge training with large models, and long-running asynchronous training. Together, these capabilities establish
+      USER as a unified and extensible systems foundation for real-world online policy learning.
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2602.07837
+      - label: Code
+        url: https://github.com/RLinf/RLinf
+  - id: rlinf-vla
+    title: 'RLinf-VLA: A Unified and Efficient Framework for Reinforcement Learning of Vision-Language-Action Models'
+    authors: >-
+      **Hongzhi Zang**\*, Mingjie Wei\*, Si Xu, Yongji Wu, Zhen Guo, Yuanqing Wang, Hao Lin, Peihong Wang, Hua Yuan, Yixian
+      Zhang, Liangzhi Shi, Yuqing Xie, Zhexuan Xu, Zhihao Liu, Kang Chen, Wenhao Tang, Quanlu Zhang, Weinan Zhang, Chao Yu,
+      Yu Wang
+    year: 2026
+    venue: RSS
+    award: Best Paper · CVPR 2026 ScaleBot Workshop
+    summary: A unified framework for scalable reinforcement learning of VLA models, with efficient resource allocation across
+      rendering, inference, and training.
+    abstract: >-
+      Recent studies have demonstrated the potential of reinforcement learning (RL) to improve the task performance of vision-language-action
+      (VLA) models through interaction. However, current efforts remain fragmented, lacking a unified platform for fair comparison
+      across architectures and algorithms, as well as an efficient system design for scalable training. Therefore, we present
+      RLinf-VLA, a unified and efficient framework for scalable RL training of VLA models. RLinf-VLA standardizes the integration
+      of diverse VLA architectures, RL algorithms, and heterogeneous simulators through a unified interface, enabling extensibility
+      and reproducibility. To improve efficiency, the framework adopts a flexible resource allocation architecture for rendering,
+      inference, and training in RL pipelines. In particular, RLinf-VLA introduces a hybrid fine-grained pipeline allocation
+      strategy that achieves a 1.61x–1.88x training speedup on ManiSkill. Using this framework, RL-trained models achieve
+      strong performance across embodied benchmarks, including 98.11% success on 130 LIBERO tasks, 97.66% success on 25 ManiSkill
+      tasks, and 84.63% average success across 6 RoboTwin tasks. In addition, RLinf-VLA distills a set of effective practices
+      for RL-based VLA training. We envision RLinf-VLA as a foundational framework for efficient, unified, and reproducible
+      research in embodied intelligence.
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2510.06710
+      - label: Code
+        url: https://github.com/RLinf/RLinf
+  - id: online-ggo
+    title: Online Guidance Graph Optimization for Lifelong Multi-Agent Path Finding
+    authors: >-
+      **Hongzhi Zang**\*, Yulun Zhang\*, He Jiang, Zhe Chen, Daniel Harabor, Peter J. Stuckey, Jiaoyang Li
+    year: 2025
+    venue: AAAI
+    summary: Learning adaptive guidance policies that improve lifelong multi-agent path finding under changing traffic and
+      task distributions.
+    abstract: >-
+      We study the problem of optimizing a guidance policy capable of dynamically guiding the agents for lifelong Multi-Agent
+      Path Finding based on real-time traffic patterns. Multi-Agent Path Finding (MAPF) focuses on moving multiple agents
+      from their starts to goals without collisions. Its lifelong variant, LMAPF, continuously assigns new goals to agents.
+      In this work, we focus on improving the solution quality of PIBT, a state-of-the-art rule-based LMAPF algorithm, by
+      optimizing a policy to generate adaptive guidance. We design two pipelines to incorporate guidance in PIBT in two different
+      ways. We demonstrate the superiority of the optimized policy over both static guidance and human-designed policies.
+      Additionally, we explore scenarios where task distribution changes over time, a challenging yet common situation in
+      real-world applications that is rarely explored in the literature.
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2411.16506
+      - label: Video
+        url: https://drive.google.com/file/d/1d35gmt18vlJ3XKdJwzmxlKv9JeASLLsc/view?usp=drive_link
+      - label: Slides
+        url: https://drive.google.com/file/d/1BwxvofBldkSyrHTNZBDLsGdL3jr-kI5Y/view?usp=drive_link
+      - label: Poster
+        url: https://drive.google.com/file/d/18BabjrKoh1BHGBhhFXegsOnXfVzg5yxW/view?usp=drive_link
+      - label: Code
+        url: https://github.com/zanghz21/OnlineGGO
+  - id: uav-formation
+    title: Multi-UAV Behavior-based Formation with Static and Dynamic Obstacles Avoidance via Reinforcement Learning
+    authors: >-
+      Yuqing Xie\*, Chao Yu\*, **Hongzhi Zang**\*, Feng Gao, Wenhao Tang, Jingyi Huang, Jiayu Chen, Botian Xu, Yi Wu, Yu Wang
+    year: 2025
+    venue: IROS
+    summary: A two-stage reinforcement learning approach to multi-UAV formation control and obstacle avoidance, evaluated
+      in simulation and the real world.
+    abstract: >-
+      Formation control of multiple Unmanned Aerial Vehicles (UAVs) is vital for practical applications.  This paper tackles
+      the task of behavior-based UAV formation while avoiding static and dynamic obstacles during directed flight. We present
+      a two-stage reinforcement learning (RL) training pipeline to tackle the challenge of multi-objective optimization, large
+      exploration spaces, and the sim-to-real gap. The first stage searches in a simplified scenario for a linear utility
+      function that balances all task objectives simultaneously, whereas the second stage applies the utility function in
+      complex scenarios, utilizing curriculum learning to navigate large exploration spaces. Additionally, we apply an attention-based
+      observation encoder to enhance formation maintenance and manage varying obstacle quantity. Experiments in simulation
+      and real world demonstrate that our method outperforms planning-based and RL-based baselines regarding collision-free
+      rate and formation maintenance in scenarios with static, dynamic, and mixed obstacles.
+    links:
+      - label: Project
+        url: https://sites.google.com/view/uav-formation-with-avoidance
+      - label: arXiv
+        url: https://arxiv.org/abs/2410.18495

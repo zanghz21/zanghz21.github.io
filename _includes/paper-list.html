@@ -1,0 +1,26 @@
+{% assign paper_heading = include.heading | default: 'h3' %}
+<div class="paper-list">
+  {% for paper in site.data.papers %}
+  <article class="paper" aria-labelledby="{{ paper.id }}-title">
+    <div class="paper__venue">
+      <span class="venue-name">{{ paper.venue }}</span>
+      <span class="venue-year">{{ paper.year }}</span>
+    </div>
+    <div class="paper__body">
+      <{{ paper_heading }} id="{{ paper.id }}-title">{{ paper.title }}</{{ paper_heading }}>
+      <div class="paper__authors">{{ paper.authors | markdownify }}</div>
+      {% if paper.award %}<p class="paper__award">{{ paper.award }}</p>{% endif %}
+      <p class="paper__summary">{{ paper.summary }}</p>
+      <ul class="paper__links" aria-label="Resources for {{ paper.title | escape }}">
+        {% for link in paper.links %}
+        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+      <details class="paper__abstract">
+        <summary>Abstract<span class="visually-hidden"> for {{ paper.title }}</span></summary>
+        <div>{{ paper.abstract | markdownify }}</div>
+      </details>
+    </div>
+  </article>
+  {% endfor %}
+</div>

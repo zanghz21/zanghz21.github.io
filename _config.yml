@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Hongzhi Zang"
 title_separator          : "-"
 name                     : &name "Hongzhi Zang"
-description              : &description "personal description"
+description              : &description "Hongzhi Zang — Ph.D. student at the College of AI, Tsinghua University. Research in robot learning."
 url                      : https://zanghz21.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zanghz21/zanghz21.github.io"
@@ -24,10 +24,11 @@ author:
   avatar           : "profile.jpg"
   name             : "Hongzhi Zang"
   pronouns         : # example: "she/her"  
-  bio              : "Hi! I am a senior student at Yao Class, Tsinghua University"
+  bio              : "First-year Ph.D. student, College of AI, Tsinghua University. Embodied intelligence."
   location         : "Beijing, China"
   uri              : # URL
   email            : "zanghzhi@gmail.com" 
+  github           : "zanghz21"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
