@@ -1,7 +1,7 @@
 ---
 layout: academic
 permalink: /
-title: "Embodied Intelligence"
+title: "Hongzhi Zang"
 excerpt: "Hongzhi Zang is a first-year Ph.D. student at the College of AI, Tsinghua University, advised by Prof. Yu Wang and working closely with Prof. Chao Yu. Research interests include embodied intelligence."
 author_profile: false
 redirect_from:
